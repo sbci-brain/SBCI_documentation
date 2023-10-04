@@ -1,4 +1,4 @@
 # SBCI_documentation
 documentation for SBCI pipeline
 
-[sbci-documentation.rtfd.io](sbci-documentation.rtfd.io)
+[https://sbci-documentation.readthedocs.io/en/latest/](https://sbci-documentation.readthedocs.io/en/latest/)
