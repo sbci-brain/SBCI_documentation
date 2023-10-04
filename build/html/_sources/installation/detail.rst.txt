@@ -1,0 +1,62 @@
+Detailed Installation SBCI Pipeline
+==============================
+
+Steps for Installing the SBCI Pipeline
+----------------------------------------
+**Clone the SBCI pipeline from GitHub**::
+
+    git clone https://github.com/sbci-brain/SBCI_Pipeline.git
+
+**Move the downloaded SBCI pipeline to your desired local folder**::
+
+    mv SBCI_Pipeline /home/yourname/
+
+.. note:: 
+
+    Replace ``/home/yourname/`` with the path to your preferred directory.
+
+**Unzip the third-party software bundled with the pipeline**::
+
+    unzip /home/yourname/SBCI_Pipeline/third_party/scilpy_set.zip -d /home/yourname/Software/set
+
+**Install SET**::
+
+    cd /home/yourname/Software/set
+    python setup.py build_all
+    pip install -e .
+
+**Test the SET installation**:
+
+After the installation, you can test SET using the ``scil_surface.py`` command. Running it should produce an output indicating the expected usage::
+    
+        scil_surface.py
+
+The output should look like::
+
+    usage: scil_surface.py [-h] [--vts_mask VTS_MASK]
+                       [-a ANNOT | -l LABEL | -m MORPH | --vts_scalar VTS_SCALAR | --vts_color VTS_COLOR | --vts_label VTS_LABEL | --image_mask IMAGE_MASK | --vts_val VTS_VAL]
+                       [-i INDICES [INDICES ...]] [--inverse_mask]
+                       [--save_vts_mask SAVE_VTS_MASK]
+                       [--save_vts_scalar SAVE_VTS_SCALAR]
+                       [--save_vts_color SAVE_VTS_COLOR]
+                       [--save_vts_label SAVE_VTS_LABEL]
+                       [--masked_labels_value MASKED_LABELS_VALUE]
+                       [-v | --save_image SAVE_IMAGE] [--no_scalar_for_masked]
+                       [--no_scalar_at NO_SCALAR_AT] [--white] [-f]
+                       surface
+    scil_surface.py: error: too few arguments
+
+.. note:: 
+
+    Script ``scil_surface.py`` is located under the path ``/home/yourname/Software/set/scilpy/scripts/``. 
+    Before running the scripts, ensure that you are using the ``sbci`` virtual environment and not the default ``base`` environment.
+
+**Final Check**:
+
+With SET installed, the SBCI pipeline should now be operational. You can verify its functionality 
+by checking the scripts in the ``HCP_example`` directory. This folder contains examples of how to use 
+the SBCI pipeline with sample HCP (Human Connectome Project) data.
+
+
+Configuration and Setup Notes
+--------------------------------

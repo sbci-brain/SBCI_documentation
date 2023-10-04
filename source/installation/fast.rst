@@ -1,0 +1,7 @@
+Fast Installation
+=====================
+Docker
+---------
+
+Singularity
+-----------
