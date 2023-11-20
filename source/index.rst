@@ -23,9 +23,8 @@ Reference:
    :maxdepth: 1
    :caption: Install
 
-   installation/prerequisites
-   installation/python
-   installation/fast
-   installation/sbci
-   installation/psc
-   installation/bash
+   installation/install_index
+   installation/method1
+   installation/method2
+   installation/method3
+

@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'SBCI documentation'
-copyright = '2023, Tianrui'
-author = 'Tianrui'
+copyright = '2023, SBCI'
+author = 'SBCI'
 release = 'v1'
 
 # -- General configuration ---------------------------------------------------
