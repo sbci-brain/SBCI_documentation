@@ -60,6 +60,3 @@ b. Activate the Matlab
 
 Click the ``Application`` -> ``Development`` -> ``Matlab``. Then use your own Matlab account to activate the Matlab.
 
-.. image:: ./png1.png
-   :alt: matlab
-
